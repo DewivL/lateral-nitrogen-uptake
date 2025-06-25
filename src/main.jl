@@ -41,28 +41,28 @@ const custom_DW = [0.8, 1.0, 1.0, 0.9, 0.8, 0.6, 0.4, 0.3, 0.1, 0.1] # this is t
 
 const treatment = [
     # High soil N, 100% coverage
-    (id = 1,  intercrop = false, soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 2,  intercrop = false, soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 3,  intercrop = true,  soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 4,  intercrop = true,  soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 1,  intercrop = false, soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 2,  intercrop = false, soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 3,  intercrop = true,  soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 4,  intercrop = true,  soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
 
     # High soil N, ~70% coverage
-    (id = 5,  intercrop = false, soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 6,  intercrop = false, soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 7,  intercrop = true,  soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 8,  intercrop = true,  soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 5,  intercrop = false, soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 6,  intercrop = false, soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 7,  intercrop = true,  soilN = 140.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 8,  intercrop = true,  soilN = 140.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
 
     # Low soil N, 100% coverage
-    (id = 9,  intercrop = false, soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 10, intercrop = false, soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 11, intercrop = true,  soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
-    (id = 12, intercrop = true,  soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 9,  intercrop = false, soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 10, intercrop = false, soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 11, intercrop = true,  soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
+    (id = 12, intercrop = true,  soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = 1.0),
 
     # Low soil N, ~70% coverage
-    (id = 13, intercrop = false, soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 14, intercrop = false, soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 15, intercrop = true,  soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
-    (id = 16, intercrop = true,  soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 1.0, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72]))
+    (id = 13, intercrop = false, soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 14, intercrop = false, soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 15, intercrop = true,  soilN = 20.0, lateral = true,  influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72])),
+    (id = 16, intercrop = true,  soilN = 20.0, lateral = false, influx_max = 250.0, NCmin = 0.01, KM = 50, K2 = 1.46, diffusion = 0.00018, coverage = rand([0.68, 0.69, 0.70, 0.71, 0.72]))
 ]
 # here the size of the soil is set in meters
 xsize, ysize, zsize = 1.0, 1.0, 1.0
